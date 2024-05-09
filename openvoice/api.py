@@ -109,8 +109,6 @@ class ToneColorConverter(OpenVoiceBaseClass):
             self.watermark_model = None
         self.version = getattr(self.hps, '_version_', "v1")
 
-
-
     def extract_se(self, ref_wav_list, se_save_path=None):
         if isinstance(ref_wav_list, str):
             ref_wav_list = [ref_wav_list]

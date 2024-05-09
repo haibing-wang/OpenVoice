@@ -55,7 +55,7 @@ class TextEncoder(nn.Module):
 
 		m, logs = torch.split(stats, self.out_channels, dim=1)
 		return x, m, logs, x_mask
-     
+    
 
 class DurationPredictor(nn.Module):
     def __init__(
